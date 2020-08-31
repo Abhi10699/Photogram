@@ -1,0 +1,21 @@
+
+.navbar {
+  display: flex;
+}
+
+.heading {
+  flex: 1;
+  font-weight: 300;
+  font-size:30px;
+  font-weight:bolder;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  
+  .link {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}

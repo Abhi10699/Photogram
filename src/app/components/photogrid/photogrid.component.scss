@@ -1,0 +1,18 @@
+.photogrid {
+
+  margin-top: 60px;  
+
+  .heading {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .grid {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    // height:10vh;
+  }
+}

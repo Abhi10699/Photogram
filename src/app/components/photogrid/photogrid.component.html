@@ -1,0 +1,6 @@
+<div class="photogrid">
+  <p class="heading">Today's best picks.</p>
+  <div class="grid">
+    <app-photo-container *ngFor="let x of createList(8)" [image-id]="x"></app-photo-container>
+  </div>
+</div>
