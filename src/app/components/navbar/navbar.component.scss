@@ -3,8 +3,10 @@ a {
   color: black;
 }
 
-.navbar {
+.mynavbar {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading {
@@ -12,11 +14,20 @@ a {
   font-weight: 300;
   font-size:30px;
   font-weight:bolder;
+
+  a {
+    // color: #0066FF;
+  }
 }
 
 .navlinks {
   list-style: none;
   display: flex;
+  align-items: center;
+
+  img {
+    border-radius: 50%;
+  }
   
   .link {
     margin-left: 30px;

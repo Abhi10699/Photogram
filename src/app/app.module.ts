@@ -9,6 +9,11 @@ import { PhotoContainerComponent } from './components/photo-container/photo-cont
 import { PhotogridComponent } from './components/photogrid/photogrid.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { RegisterComponent } from './pages/auth/register/register.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,10 +25,16 @@ import { RegisterComponent } from './pages/auth/register/register.component';
     PhotogridComponent,
     LoginComponent,
     RegisterComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,13 +2,24 @@
   <h1 class="heading">
     <a routerLink="">Photogram</a>
   </h1>
-  <ul class="navlinks">
-    <!-- Add links here -->
-    <li class="link">
-      <a routerLink="auth/login">Login</a>
-    </li>
-    <li class="link">
-      <a routerLink="auth/signup">Register</a>
-    </li>
-  </ul>
+
+  <div *ngIf="user == null;else navActions" #navbar>
+    <ul class="navlinks">
+      <!-- Add links here -->
+      <li class="link">
+        <a routerLink="auth/login">Login</a>
+      </li>
+      <li class="link">
+        <a routerLink="auth/signup">Register</a>
+      </li>
+    </ul>
+  </div>
+
+  <ng-template #navActions>
+    <div class="navlinks">
+      <li class="link">Hello, {{ user.displayName }}</li>
+      <li class="link"><a href="" (click)="signOut()">Signout</a></li>
+    </div>
+    <!-- <img src=" https://api.adorable.io/avatars/50/abott@adorable.png" alt=""> -->
+  </ng-template>
 </nav>

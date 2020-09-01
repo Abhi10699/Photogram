@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "photogram-9c505": {
+      "hosting": {
+        "photogram": [
+          "photogram-9c505"
+        ]
+      }
+    }
+  }
+}
