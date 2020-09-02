@@ -1,3 +1,14 @@
 <div class="dashboardContainer">
+  <div class="sidebar">
+    <a href="#" class="sideLink" *ngFor="let item of sidebarItems">
+      <span class={{item.icon}}></span>
+      {{ item.title }}
+    </a>
+  </div>
+  <div class="pGrid">
+    <app-photogrid></app-photogrid>
+    <div class="other">
 
+    </div>
+  </div>
 </div>

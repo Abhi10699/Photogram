@@ -1,0 +1,27 @@
+.sidebar{
+  border-right:1px solid rgba(112,0,255,0.3);
+
+  padding: 10px;
+  color:white;
+  
+  display: flex;
+  flex-direction: column;
+  
+  .sideLink {
+    color:black;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+
+    span {
+      color:#7000FF;
+    }
+    
+    &.active {
+      padding:10px;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      background: #7000FF;
+      }
+    }
+  }

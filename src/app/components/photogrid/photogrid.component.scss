@@ -1,15 +1,14 @@
 .photogrid {
-
-  margin-top: 60px;  
+  height: auto;
 
   .heading {
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 20px;
   }
 
   .mygrid {
-    margin-top: 40px;
-
+    // margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 10px;

@@ -1,0 +1,41 @@
+.dashboardContainer {
+  display: flex;
+  margin-left: 18px;
+  flex-direction: row;
+  margin-top:30px;
+
+  .sidebar{
+    flex:0.17;
+    border-right:1px solid rgba(112,0,255,0.3);
+    
+    // height: calc(100vh);
+    padding: 10px;
+    color:white;
+    
+    display: flex;
+    flex-direction: column;
+    
+    .sideLink {
+      color:black;
+      margin-bottom: 40px;
+      font-size: 1.2em;
+
+      span {
+        color: #7000FF;
+      }
+
+      &.active {
+        padding:10px;
+        color: white;
+        font-weight: bold;
+        border-radius: 4px;
+        background: #7000FF;
+      }
+    }
+  }
+  .pGrid {
+    flex: 1;
+    padding-left:30px;
+    margin-top:-10px
+  }
+}
